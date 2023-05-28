@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Рынок</title>
+  <link type="image/x-icon" href="im.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="im.ico" rel="icon">
+</head>
+
+<body class="theme-light">
+  <script src="script.js"></script>
+    <div class="container">
+      <nav class="fixed-menu">
+        <ul>
+          <li><a href="#fruits">Фрукты</a></li>
+          <li><a href="#vegets">Овощи</a></li>
+          <li><a href="#berries">Ягоды</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <button class="switch-button" onclick="toggleTheme()">Переключить тему</button>
+        </div>
+      </nav>
+
+      <div class="overlay" id="overlay">
+        <form>
+          <h2>Форма покупки</h2>
+          <label>Количество:</label>
+          <input type="number" name="number" min="1" required>
+          <br>
+          <label>Цвет:</label> 
+          <input type="radio" name="color" required> Красный
+          <input type="radio" name="color"> Синий
+          <input type="radio" name="color"> Зеленый
+          <br>
+          <label>Комментарий:</label>
+          <textarea class="comment" maxlength="2000"></textarea>
+          <br>
+          <button class="buy-submit">Купить</button>
+          <button class="buy-close" onclick="closeForm()">Закрыть</button>
+        </form>
+      </div>
+
+      <section id="fruits">
+
+        <h2>Фрукты</h2>
+
+        <div class="card">
+          <img src="images/banan.jpg" alt="Картинка товара">
+          <h3 class="caption">Банан</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/pear.jpg" alt="Картинка товара">
+          <h3 class="caption">Груша</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/grenade.jpg" alt="Картинка товара">
+          <h3 class="caption">Гранат</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/lemon.jpg" alt="Картинка товара">
+          <h3 class="caption">Лимон</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/qiwi.jpg" alt="Картинка товара">
+          <h3 class="caption">Киви</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/peach.jpg" alt="Картинка товара">
+          <h3 class="caption">Персик</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/mango.jpg" alt="Картинка товара">
+          <h3 class="caption">Манго</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/plum.jpg" alt="Картинка товара">
+          <h3 class="images/caption">Слива</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/hurma.jpg" alt="Картинка товара">
+          <h3 class="caption">Хурма</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/apple.jpg" alt="Картинка товара">
+          <h3 class="caption">Яблоко</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/orange.jpg" alt="Картинка товара">
+          <h3 class="caption">Апельсин</h3>
+          <p class="date">Добавлено: <span class="added-date">01.01.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+      </section>
+      
+      <section id="vegets">
+
+        <h2>Овощи</h2>
+        
+        <div class="card">
+          <img src="images/tomato.jpg" alt="Картинка товара">
+          <h3 class="caption">Помидор</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/eggplant.jpg" alt="Картинка товара">
+          <h3 class="caption">Баклажан</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/cucumber.jpg" alt="Картинка товара">
+          <h3 class="caption">Огурец</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/cabbage.jpg" alt="Картинка товара">
+          <h3 class="caption">Капуста</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/corn.jpg" alt="Картинка товара">
+          <h3 class="caption">Кукуруза</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/garlic.jpg" alt="Картинка товара">
+          <h3 class="caption">Лук</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/carrot.jpg" alt="Картинка товара">
+          <h3 class="caption">Морковь</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/perec.jpg" alt="Картинка товара">
+          <h3 class="caption">Перец</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/redic.jpg" alt="Картинка товара">
+          <h3 class="caption">Редис</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/svekla.jpg" alt="Картинка товара">
+          <h3 class="caption">Свекла</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+      </section>
+      
+      <section id="berries">
+
+        <h2>Ягоды</h2>
+        
+        <div class="card">
+          <img src="images/watermelon.jpg" alt="Картинка товара">
+          <h3 class="caption">Арбуз</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div> 
+
+        <div class="card">
+          <img src="images/blackberries.jpg" alt="Картинка товара">
+          <h3 class="caption">Черника</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/blackberries2.jpg" alt="Картинка товара">
+          <h3 class="caption">Черная смородина</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+         
+        <div class="card">
+          <img src="images/merry.jpg" alt="Картинка товара">
+          <h3 class="caption">Черешня</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div> 
+
+        <div class="card">
+          <img src="images/raspberry.jpg" alt="Картинка товара">
+          <h3 class="caption">Малина</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+ 
+        <div class="card">
+          <img src="images/Gooseberry.jpg" alt="Картинка товара">
+          <h3 class="caption">Крыжовник</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+ 
+        <div class="card">
+          <img src="images/Strawberry.jpg" alt="Картинка товара">
+          <h3 class="caption">Клубника</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+ 
+        <div class="card">
+          <img src="images/red_ribes.jpg" alt="Картинка товара">
+          <h3 class="caption">Красная смородина</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+ 
+        <div class="card">
+          <img src="images/blackberry.jpg" alt="Картинка товара">
+          <h3 class="caption">Ежевика</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+ 
+        <div class="card">
+          <img src="images/fig.jpg" alt="Картинка товара">
+          <h3 class="caption">Инжир</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/grape.jpg" alt="Картинка товара">
+          <h3 class="caption">Виноград</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/dove.jpg" alt="Картинка товара">
+          <h3 class="caption">Голубика</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+        <div class="card">
+          <img src="images/feijoa.jpg" alt="Картинка товара">
+          <h3 class="caption">Фейхоа</h3>
+          <p class="date">Добавлено: <span class="added-date">01.03.2022</span></p>
+          <button class="buy-button" onclick="showForm()">Купить</button>
+        </div>
+
+      </section>
+
+      <button class="btn-up btn-up_hide" onclick="scrollToTop()"></button>
+
+      <nav class="bottom-list">
+        <ul>
+          <li><a href="#fruits">Фрукты</a></li>
+          <li><a href="#vegets">Овощи</a></li>
+          <li><a href="#berries">Ягоды</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  </html>

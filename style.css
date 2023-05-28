@@ -134,24 +134,22 @@ body {
   }
   
   .btn-up {
-  /*фиксированная позиция*/
+  /* фиксированная позиция */
     position: fixed; 
     right: 20px;
     bottom: 0px;
-  /*скругление верхнего левого угла*/
+  /* скругление верхнего левого угла */
     border-top-left-radius: 8px; 
-  /*скругление верхнего правого угла*/
+  /* скругление верхнего правого угла */
     border-top-right-radius: 8px; 
-  /*форма курсора*/
+  /* форма курсора */
     cursor: pointer;
     display: flex;
-  /*по центру кнопки*/
+  /* по центру кнопки */
     align-items: center;
     justify-content: center;
-    transition: opacity 0.3s ease-in-out;
     width: 60px;
     height: 50px;
-    opacity: 1;
   }
   .theme-light .btn-up {
     background-color: #818181; 
@@ -159,14 +157,14 @@ body {
   .theme-dark .btn-up {
     background-color: #e5e5e5; 
   }
-  
+  /* псевдоэлемент */
   .btn-up::before {
-  /*текста у кнопки нет*/
+  /* текста у кнопки нет */
     content: "";
     width: 40px;
     height: 40px;
     background-size: 100% 100%;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/271/271239.png");
+    background-image: url("images/arrow.jpg");
   }
   
   .btn-up_hide {
@@ -180,7 +178,7 @@ body {
   @media (hover: hover) and (pointer: fine) {
     .theme-light .btn-up:hover {
       background-color: #ffffff; /* цвет заднего фона при наведении */
-    }
+    } 
     .theme-dark .btn-up:hover {
       background-color: #6b6b6b; /* цвет заднего фона при наведении */
     }
@@ -218,14 +216,6 @@ body {
       min-width: 350px; 
       min-height: 100px;
     }
-
-/*.buy-button {
-  // Стили кнопки "Купить" на основной странице
-}
-
-.buy-submit, .buy-close {
-  // Стили кнопок внутри формы
-} */
 
 .theme-toggle {
   padding: 7px 0 0 91%;
